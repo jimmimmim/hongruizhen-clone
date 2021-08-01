@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>홍루이젠 클론 코딩 홈페이지</title>
+    <title>홍루이젠 클론 코딩 페이지</title>
     
     <link rel="stylesheet" href="style.css">
     
@@ -13,35 +13,67 @@
 <body>
     <div class="wrapper">
         <header>
-            <nav>
-                <div class="float-left">
+            <nav class="sticky-nav">
+                <div class="flex-left">
                     <button type="button" class="btn-image" id="btn-logo-brand">
-                        <img src="img/logo-brand/logo-brand.png" width=150px height=auto />
+                        <img src="img/logo-brand/logo-brand.png" width=130px height=auto />
                     </button>
                     <div class="nav-box">
                         <ul>
-                            <li>
-                                <a href="#">브랜드소개</a>
-                            </li>
+                            <div class="dropdown">
+                                <li>
+                                        <a href="#">브랜드소개</a>
+                                        <div class="dropdown-content">
+                                            <a href="#">홍루이젠 소개</a>
+                                            <a href="#">브랜드 철학</a>
+                                            <a href="#">히스토리</a>
+                                        </div>
+                                </li>
+                            </div>
                             <li>
                                 <a href="#">브랜드관</a>
                             </li>
-                            <li>
-                                <a href="#">메뉴</a>
-                            </li>
-                            <li>
-                                <a href="#">매장안내</a>
-                            </li>
-                            <li>
-                                <a href="#">커뮤니티</a>
-                            </li>
+                            <div class="dropdown">
+                                <li>
+                                        <a href="#">메뉴</a>
+                                        <div class="dropdown-content">
+                                            <a href="#">전체</a>
+                                            <a href="#">신제품</a>
+                                            <a href="#">소프트 샌드위치</a>
+                                            <a href="#">갓군샌</a>
+                                            <a href="#">프레시 샌드위치</a>
+                                            <a href="#">디저트</a>
+                                            <a href="#">음료</a>
+                                        </div>
+                                </li>
+                            </div>
+                            <div class="dropdown">
+                                <li>
+                                    <a href="#">매장안내</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">매장 찾기</a>
+                                        <a href="#">단체주문</a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="dropdown">
+                                <li>
+                                    <a href="#">커뮤니티</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">홍루이젠소식</a>
+                                        <a href="#">프레스센터</a>
+                                        <a href="#">이벤트</a>
+                                        <a href="#">고객의 소리</a>
+                                    </div>
+                                </li>
+                            </div>
                             <li>
                                 <a href="#">쇼핑하기</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="float-right">
+                <div class="flex-right">
                     <div class="login-box">
                         <ul>
                             <li>
@@ -148,7 +180,23 @@
             <div class="copyright" id="copyright">
                 <p>Copyright (c) HONG RUI CHEN CORP All right reserved.</p>
             </div>
+            <nav class="floating-menu">
+                <ul>
+                    <li>
+                        <button type="button" class="floating-nav-icon" id="btn-icon-quick01">
+                            <img src="img/icon/quick_icon01.png" width=19px/>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="floating-nav-icon" id="btn-icon-quick02">
+                            <img src="img/icon/quick_icon02.png" width=19px/>
+                        </button> 
+                    </li>
+                </ul>
+            </nav>
         </footer>
     </div>
+
+    <!-- <script type="text/javascript" src="script.js"></script>  -->
 </body>
 </html>

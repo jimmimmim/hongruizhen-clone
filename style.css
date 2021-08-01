@@ -1,14 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap");
 
+::selection {
+  color: #fff5d9;
+  background: #ee7868;
+}
+
 html,
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin: auto;
   padding: 0;
+}
+
+body {
+  background-color: #fdf08a;
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari*/
 }
 
 ul {
@@ -25,27 +38,25 @@ li {
 /* NAVIGATION-BOX */
 /*++++++++++++++++*/
 
-nav {
+.sticky-nav {
+  display: flex;
   position: fixed;
   width: 100%;
-  height: 70px;
-  display: flex;
+  height: 80px;
   top: 0;
   left: 0;
   right: 0;
   align-items: center;
   background-color: white;
-  border-bottom-width: 1px;
-  border-bottom-style: hidden;
-  border-bottom-color: #e7e7e7;
+  border-bottom: hidden 1px #e7e7e7;
 }
 
-.float-left {
+.flex-left {
   display: flex;
   flex-grow: 1;
 }
 
-.float-right {
+.flex-right {
   display: flex;
   align-items: center;
 }
@@ -54,37 +65,84 @@ nav {
   width: 100%;
 }
 
+.nav-box a {
+  letter-spacing: -1px;
+}
+
 .nav-box a:link {
-  color: black;
+  color: #2e0e0f;
   text-decoration: none;
 }
 
 .nav-box a:visited {
-  color: black;
+  color: #2e0e0f;
   text-decoration: none;
 }
 
 .nav-box a:hover {
-  color: red;
+  color: #f52334;
   transition-duration: 0.5s;
 }
 
 .nav-box a:active {
-  color: red;
+  color: #f52334;
 }
 
 .nav-box ul {
   display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .nav-box li {
+  padding-top: 27px;
+  padding-bottom: 27px;
   padding-right: 20px;
   width: max-content;
+  height: auto;
+  font-size: 110%;
 }
 
-.nav-box li:last-child {
-  margin-right: 20px;
+/*++++++++++*/
+/* DROPDOWN */
+/*++++++++++*/
+
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  background-color: white;
+  border-top: solid 1px #ededed;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  font-weight: 500;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*+++++++*/
+/* LOGIN */
+/*+++++++*/
 
 .login-box {
   padding: 5px;
@@ -106,12 +164,12 @@ nav {
 }
 
 .login-box a:link {
-  color: black;
+  color: #2e0e0f;
   text-decoration: none;
 }
 
 .login-box a:visited {
-  color: black;
+  color: #2e0e0f;
   text-decoration: none;
 }
 
@@ -135,13 +193,13 @@ nav {
   background-color: white;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 10px;
+  margin-left: 24px;
   margin-right: 80px;
 }
 
 #btn-icon-ham {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 24px;
   background-color: white;
 }
 
@@ -149,15 +207,15 @@ nav {
   width: max-content;
   height: auto;
   display: inline-block;
-  padding: 9px 50px;
+  padding: 9px 53px;
   margin-left: 25px;
-  margin-right: 25px;
-  border-style: solid;
-  border-color: red;
-  background-color: white;
-  border-width: 3px;
+  margin-right: 29px;
+  margin-bottom: 3px;
+  border: solid 3px #f52334;
   border-radius: 28px;
-  color: red;
+  background-color: white;
+  color: #f52334;
+  letter-spacing: -1px;
   font-size: 110%;
   font-weight: 700;
 }
@@ -180,6 +238,14 @@ footer p {
   font-size: 13px;
 }
 
+.footer {
+  display: block;
+  width: 100%;
+  height: 300px;
+  /* position: fixed; */
+  /* bottom: 0; */
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -192,8 +258,11 @@ footer p {
 
 .footer-box {
   float: left;
-  border-style: hidden;
-  border-color: white;
+  border: hidden white;
+}
+
+.footer-box a {
+  letter-spacing: -1px;
 }
 
 .border-line {
@@ -262,10 +331,45 @@ footer p {
   border-top: #9a908f;
   border-left: #2d1817;
   border-right: #2d1817;
+  border-bottom: #2d1817;
   border-width: 1px;
   border-style: solid;
 }
 
 .copyright p {
   font-size: 12px;
+}
+
+/*++++++++++++++*/
+/* FLOATING NAV */
+/*++++++++++++++*/
+
+.floating-menu {
+  width: auto;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+.floating-nav-icon {
+  width: 57px;
+  height: 57px;
+  display: inline-block;
+  background-color: #f52334;
+  border-radius: 50%;
+  border-style: hidden;
+  cursor: pointer;
+}
+
+#btn-icon-quick01 {
+  position: fixed;
+  bottom: 124px;
+  right: 39px;
+}
+
+#btn-icon-quick02 {
+  position: fixed;
+  bottom: 42px;
+  right: 39px;
 }
