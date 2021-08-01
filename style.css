@@ -27,16 +27,31 @@ li {
 
 nav {
   position: fixed;
+  width: 100%;
   height: 70px;
-  background-color: white;
   display: flex;
   top: 0;
   left: 0;
   right: 0;
+  align-items: center;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: hidden;
+  border-bottom-color: #e7e7e7;
+}
+
+.float-left {
+  display: flex;
+  flex-grow: 1;
+}
+
+.float-right {
+  display: flex;
+  align-items: center;
 }
 
 .nav-box {
-  padding: 3px;
+  width: 100%;
 }
 
 .nav-box a:link {
@@ -58,21 +73,36 @@ nav {
   color: red;
 }
 
+.nav-box ul {
+  display: flex;
+}
+
 .nav-box li {
   padding-right: 20px;
+  width: max-content;
 }
 
 .nav-box li:last-child {
-  margin-right: 70px;
+  margin-right: 20px;
 }
 
 .login-box {
   padding: 5px;
+  display: inline-block;
+}
+
+.login-box ul {
+  display: flex;
 }
 
 .login-box li {
   padding-right: 10px;
   font-weight: 700;
+  width: max-content;
+}
+
+.login-box li:last-child {
+  padding-right: 0;
 }
 
 .login-box a:link {
@@ -103,30 +133,33 @@ nav {
 #btn-logo-brand {
   float: left;
   background-color: white;
-  margin: 10px 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  margin-right: 80px;
 }
 
 #btn-icon-ham {
-  position: fixed;
-  top: 25px;
-  right: 0;
-  background-color: white;
+  display: inline-block;
   margin-right: 20px;
+  background-color: white;
 }
 
 #btn-text-franchise {
-  height: 43px;
+  width: max-content;
+  height: auto;
+  display: inline-block;
+  padding: 9px 50px;
+  margin-left: 25px;
+  margin-right: 25px;
   border-style: solid;
   border-color: red;
   background-color: white;
   border-width: 3px;
-  padding: 0px 50px;
-  border-radius: 22px;
+  border-radius: 28px;
   color: red;
+  font-size: 110%;
   font-weight: 700;
-  margin-top: 15px;
-  margin-left: 25px;
-  margin-right: 25px;
 }
 
 /*++++++++*/
@@ -151,15 +184,15 @@ footer p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #3b2120;
   color: #a69c9c;
-  padding: 50px;
+  padding: 50px 50px;
 }
 
 .footer-box {
   float: left;
-  border-style: solid;
+  border-style: hidden;
   border-color: white;
 }
 
@@ -170,18 +203,54 @@ footer p {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* .footer-box::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 146px;
-  background-color: rgba(255, 255, 255, 0.2);
-  top: 50%;
-  margin-top: -73px;
-  right: 0;
-} */
+#footer-box-left {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer-menu-left {
+  display: inline-block;
+}
+
+.footer-menu-left ul {
+  font-size: 120%;
+}
+
+.footer-menu-left li {
+  padding-right: 20px;
+}
+
+.footer-menu-leftBottom p {
+  margin-top: 30px;
+}
+
+.footer-menu-left li:last-child {
+  padding-right: 0;
+}
+
+#footer-box-right {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-box-right ul {
+  float: right;
+  font-size: 120%;
+}
+
+.footer-menu-right {
+  display: inline-block;
+}
+
+.footer-menu-right li {
+  padding-left: 20px;
+}
+
+.footer-menu-right li:first-child {
+  padding-left: 0;
+}
+
+.footer-menu-rightBottom {
   display: inline-block;
 }
 
