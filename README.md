@@ -13,3 +13,11 @@ https://hongruizhen.com/main/index.php
 - footer
 
 <img src="https://user-images.githubusercontent.com/72171903/127782915-c06143b9-84a2-4134-b142-971b3ac993e7.png" width=75%>
+
+2021-08-02 (2.5h)
+
+- section
+- font family updated
+- text animation
+
+<img src="https://user-images.githubusercontent.com/72171903/127919378-92480c42-fa49-46b9-961a-d3a3b04d3158.png" width=75%>
