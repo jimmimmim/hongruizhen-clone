@@ -20,4 +20,5 @@ https://hongruizhen.com/main/index.php
 - font family updated
 - text animation
 
-<img src="https://user-images.githubusercontent.com/72171903/127919378-92480c42-fa49-46b9-961a-d3a3b04d3158.png" width=75%>
+<img src="https://user-images.githubusercontent.com/72171903/127919494-e443ac3c-eeb3-4b76-a300-bdabc71f2bd1.png" width=75%>
+
