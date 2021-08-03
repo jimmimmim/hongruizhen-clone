@@ -1,8 +1,8 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
   font-family: "S-CoreDream";
@@ -44,6 +44,10 @@ body {
   height: 100%;
   margin: auto;
   padding: 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -100,7 +104,7 @@ p {
   align-items: center;
   background-color: white;
   border-bottom: hidden 1px #e7e7e7;
-  z-index: 1;
+  z-index: 10;
 }
 
 .flex-left {
@@ -502,63 +506,6 @@ footer p {
   position: relative;
 }
 
-/* .slide ul {
-  height: calc(100% * 4);
-  transition: 0.7s;
-} */
-
-/* .slide li {
-  width: 100%;
-  height: calc(100% / 4);
-  z-index: -3;
-}
-
-.slide input {
-  display: none;
-} */
-
-/* .slide .bullet {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-}
-.slide .bullet label {
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  border: 2px solid #f52334;
-  display: inline-block;
-  background: #fff;
-  font-size: 0;
-  transition: 0.5s;
-  cursor: pointer;
-} */
-
-/* 슬라이드 조작 */
-/* #pos1:checked ~ ul {
-  margin-top: 80px;
-}
-#pos2:checked ~ ul {
-  margin-top: -500px;
-}
-#pos3:checked ~ ul {
-  margin-top: -1080px;
-}
-#pos4:checked ~ ul {
-  margin-top: -1660px;
-} */
-
-/* bullet 조작 */
-/* #pos1:checked ~ .bullet label:nth-child(1),
-#pos2:checked ~ .bullet label:nth-child(2),
-#pos3:checked ~ .bullet label:nth-child(3),
-#pos4:checked ~ .bullet label:nth-child(4) {
-  background: #f52334;
-} */
-
 .sec-01 {
   background: #fdf08a;
   border: 1px solid red;
@@ -566,11 +513,32 @@ footer p {
   position: relative;
 }
 
+.sli-bg {
+  position: absolute;
+  /* margin-top: 80px; */
+  width: 100%;
+  height: 180%;
+  top: -40%;
+  left: -22%;
+  background-color: #ffe675;
+  border-radius: 100%;
+  z-index: 0;
+}
+
+.sli-img {
+  position: absolute;
+  max-width: 500px;
+  top: 18%;
+  left: 30%;
+  z-index: 1;
+}
+
 .sli-text {
   position: relative;
   float: left;
-  margin-top: 143px;
-  margin-left: 58px;
+  margin-top: 207px;
+  margin-left: 75px;
+  z-index: 2;
 }
 
 .sec-01 h3 {
@@ -607,6 +575,17 @@ footer p {
 
 .sec-05 {
   background: #fff5c6;
+}
+
+.sec-05 h3 {
+  font-size: 220%;
+  font-weight: 600;
+  color: #2e0e0f;
+  text-align: left;
+  letter-spacing: -3px;
+  line-height: 140%;
+  margin: 0 0;
+  padding-bottom: 10px;
 }
 
 .sec-06 {
@@ -660,14 +639,6 @@ footer p {
   font-weight: 700;
   color: #f52334;
   animation: flow 50s linear infinite;
-  /* animation-duration: 50s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: flow; */
 }
 
 .sub-slide p img {
