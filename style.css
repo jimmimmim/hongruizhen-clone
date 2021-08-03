@@ -122,22 +122,22 @@ p {
 }
 
 /* 수정 필요 */
-.nav-box > ul > li > a:link,
-.nav-box > ul > div > li > a:link {
+.nav-box ul li a:link,
+.nav-box ul div li a:link {
   color: #2e0e0f;
   text-decoration: none;
 }
 
 /* 수정 필요 */
-.nav-box > ul > li > a:visited,
-.nav-box > ul > div > li > a:visited {
+.nav-box ul li a:visited,
+.nav-box ul div li a:visited {
   color: #2e0e0f;
   text-decoration: none;
 }
 
 /* 수정 필요 */
-.nav-box > ul > li > a:hover,
-.nav-box > ul > div > li > a:hover {
+.nav-box ul li a:hover,
+.nav-box ul div li a:hover {
   color: #f52334;
   text-decoration: none;
 }
@@ -157,11 +157,11 @@ p {
   margin-bottom: 0;
 }
 
-.nav-box > ul > li,
-.nav-box > ul > div > li {
+.nav-box ul li,
+.nav-box ul div li {
   padding-top: 27px;
   padding-bottom: 27px;
-  padding-right: 20px;
+  padding-right: 19px;
   width: max-content;
   height: auto;
   font-size: 110%;
@@ -297,10 +297,10 @@ p {
 #btn-logo-brand {
   float: left;
   background-color: white;
-  margin-top: auto;
+  margin-top: 21px;
   margin-bottom: auto;
-  margin-left: 24px;
-  margin-right: 80px;
+  margin-left: 29px;
+  margin-right: 84px;
 }
 
 #btn-icon-ham {
@@ -561,6 +561,40 @@ footer p {
 
 .sec-01 {
   background: #fdf08a;
+  border: 1px solid red;
+  text-align: right;
+  position: relative;
+}
+
+.sli-text {
+  position: relative;
+  float: left;
+  margin-top: 143px;
+  margin-left: 58px;
+}
+
+.sec-01 h3 {
+  font-size: 220%;
+  font-weight: 600;
+  color: #2e0e0f;
+  letter-spacing: -3px;
+  line-height: 140%;
+  margin: 0 0;
+  padding-bottom: 10px;
+}
+
+.sec-01 h3 strong {
+  color: #f52334;
+  letter-spacing: -0.5px;
+}
+
+.sec-01 p {
+  font-size: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  color: rgba(64, 30, 32, 0.8);
+  line-height: 160%;
+  letter-spacing: -0.3px;
 }
 
 .sec-03 {
