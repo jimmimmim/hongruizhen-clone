@@ -102,6 +102,7 @@ p {
   left: 0;
   right: 0;
   align-items: center;
+  word-break: keep-all;
   background-color: white;
   border-bottom: hidden 1px #e7e7e7;
   z-index: 10;
@@ -216,6 +217,7 @@ p {
   color: #777;
   text-decoration: none;
   text-align: left;
+  overflow-wrap: normal;
   font-family: "S-CoreDream-3Light", sans-serif;
 }
 
@@ -260,6 +262,7 @@ p {
   padding-right: 10px;
   font-size: 90%;
   font-weight: 600;
+  word-break: keep-all;
   font-family: "Montserrat", "S-CoreDream", sans-serif;
   width: max-content;
 }
@@ -506,16 +509,20 @@ footer p {
   position: relative;
 }
 
+/*++++++++++++++++++*/
+/* SENTION 1: MAIN */
+/*++++++++++++++++++*/
+
 .sec-01 {
   background: #fdf08a;
   border: 1px solid red;
   text-align: right;
+  word-break: keep-all;
   position: relative;
 }
 
 .sli-bg {
   position: absolute;
-  /* margin-top: 80px; */
   width: 100%;
   height: 180%;
   top: -40%;
@@ -565,6 +572,59 @@ footer p {
   letter-spacing: -0.3px;
 }
 
+.sli-page {
+  position: absolute;
+  width: 400px;
+  top: 27%;
+  left: 68%;
+  color: #401e20;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+  text-align: left;
+  z-index: 1;
+}
+
+.sli-page-content {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.sli-page-content:first-child {
+  margin-left: 0;
+}
+
+.sli-pgnum {
+  font-size: 17px;
+}
+
+.sli-pgimg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50px;
+  margin-top: -15px;
+  background-color: #ffe001;
+  border: 2px solid #401e1e;
+  /* background-color: #fbe4ab; */
+  /* border: 2px solid #be9c6c; */
+  border-radius: 100%;
+}
+
+#sli-pgimg-01 {
+  left: 36px;
+}
+
+.sli-pgtxt {
+  margin-left: 17px;
+  padding-left: 70px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 .sec-03 {
   background: #ffdcd1;
 }
@@ -592,7 +652,10 @@ footer p {
   background: #def1ee;
 }
 
+/*++++++++++++++++++++*/
 /* SENTION 2: PRODUCT */
+/*++++++++++++++++++++*/
+
 .sec-02 {
   background: #fff5d9;
   padding: 100px;
