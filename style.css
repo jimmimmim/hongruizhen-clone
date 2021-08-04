@@ -531,11 +531,23 @@ footer p {
   z-index: 0;
 }
 
+.sli-page-content:nth-child(1):active .sli-bg,
+.sli-page-content:nth-child(1):hover .sli-bg,
+.sli-page-content:nth-child(3):active .sli-bg,
+.sli-page-content:nth-child(3):hover .sli-bg {
+  opacity: 1;
+}
+
+.sli-page-content:nth-child(2):active .sli-bg,
+.sli-page-content:nth-child(2):hover .sli-bg {
+  background-color: #fac6be;
+}
+
 .sli-img {
   position: absolute;
   max-width: 500px;
-  top: 18%;
-  left: 30%;
+  top: -21%;
+  left: -120%;
   z-index: 1;
 }
 
@@ -569,24 +581,50 @@ footer p {
 
 .sli-text {
   position: absolute;
-  float: left;
-  margin-top: 207px;
-  margin-left: 75px;
+  top: 22%;
+  left: -199%;
+  /* float: right; */
+  margin-top: 0;
+  margin-left: 0;
   z-index: 2;
+  text-align: right;
 }
 
+#sli-text-01,
 #sli-text-02,
 #sli-text-03 {
-  opacity: 1;
+  opacity: 0;
+}
+
+.sli-text.active {
+  border: 2px solid red;
 }
 
 /* 수정 - active only */
+/* 수정 - page-content 범위 축소 */
 .sli-page-content:nth-child(1):active #sli-text-01,
 .sli-page-content:nth-child(1):hover #sli-text-01,
 .sli-page-content:nth-child(2):active #sli-text-02,
 .sli-page-content:nth-child(2):hover #sli-text-02,
 .sli-page-content:nth-child(3):active #sli-text-03,
 .sli-page-content:nth-child(3):hover #sli-text-03 {
+  opacity: 1;
+}
+
+#sli-img-01,
+#sli-img-02,
+#sli-img-03 {
+  opacity: 0;
+}
+
+/* 수정 - active only */
+/* 수정 - page-content 범위 축소 */
+.sli-page-content:nth-child(1):active #sli-img-01,
+.sli-page-content:nth-child(1):hover #sli-img-01,
+.sli-page-content:nth-child(2):active #sli-img-02,
+.sli-page-content:nth-child(2):hover #sli-img-02,
+.sli-page-content:nth-child(3):active #sli-img-03,
+.sli-page-content:nth-child(3):hover #sli-img-03 {
   opacity: 1;
 }
 
