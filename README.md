@@ -27,3 +27,9 @@ https://hongruizhen.com/main/index.php
 - main section: center image, background img
 
 <img src="https://user-images.githubusercontent.com/72171903/128076627-2c8377ce-4072-4463-8b0c-db60196d97be.png">
+
+2021-08-04 (3h)
+
+- main section: center image change, pagination
+
+<img src="https://user-images.githubusercontent.com/72171903/128233751-56ae5409-6804-4de8-beb1-600f6412db6e.png">
