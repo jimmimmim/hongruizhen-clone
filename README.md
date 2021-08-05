@@ -33,3 +33,10 @@ https://hongruizhen.com/main/index.php
 - main section: center image change, pagination
 
 <img src="https://user-images.githubusercontent.com/72171903/128233751-56ae5409-6804-4de8-beb1-600f6412db6e.png">
+
+2021-08-05 (0.5h)
+
+- event section: image arrangement
+
+<img src="https://user-images.githubusercontent.com/72171903/128420820-f7110f1b-e044-4af2-83f9-f129e5e99903.png">
+
