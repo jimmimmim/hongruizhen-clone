@@ -26,7 +26,7 @@ https://hongruizhen.com/main/index.php
 
 - main section: center image, background img
 
-// <img src="https://user-images.githubusercontent.com/72171903/128076627-2c8377ce-4072-4463-8b0c-db60196d97be.png">
+<!-- <img src="https://user-images.githubusercontent.com/72171903/128076627-2c8377ce-4072-4463-8b0c-db60196d97be.png"> -->
 
 2021-08-04 (3h)
 
