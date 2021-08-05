@@ -12,7 +12,7 @@ https://hongruizhen.com/main/index.php
 - top navigation bar
 - footer
 
-<img src="https://user-images.githubusercontent.com/72171903/127782915-c06143b9-84a2-4134-b142-971b3ac993e7.png">
+<!-- <img src="https://user-images.githubusercontent.com/72171903/127782915-c06143b9-84a2-4134-b142-971b3ac993e7.png"> -->
 
 2021-08-02 (2.5h)
 
