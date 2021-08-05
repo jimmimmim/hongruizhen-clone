@@ -796,9 +796,54 @@ footer p {
   text-align: center;
 }
 
+/*++++++++++++++++++*/
+/* SECTION 3: EVENT */
+/*++++++++++++++++++*/
+
 .sec-03 {
   background: #ffdcd1;
 }
+
+.sli-event {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.sli-event-slide {
+  width: 330px;
+  height: 330px;
+  padding: 0;
+}
+
+.event-img-content {
+  margin-top: 30px;
+}
+
+.event-img-content:hover {
+  width: 330px;
+  height: 330px;
+  padding: 0;
+  margin-top: 0;
+  transition: 0.5s;
+}
+
+.event-content {
+  width: 330px;
+  height: 180px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  /* text-decoration: none; */
+  line-height: 1.4;
+  background-color: #3c2121;
+  opacity: 0;
+}
+
+/*+++++++++++++++++*/
+/* SECTION 4: NEWS */
+/*+++++++++++++++++*/
 
 .sec-04 {
   background: #ffdcd1;
