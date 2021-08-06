@@ -38,5 +38,12 @@ https://hongruizhen.com/main/index.php
 
 - event section: image arrangement
 
-<img src="https://user-images.githubusercontent.com/72171903/128420820-f7110f1b-e044-4af2-83f9-f129e5e99903.png">
+<!-- <img src="https://user-images.githubusercontent.com/72171903/128420820-f7110f1b-e044-4af2-83f9-f129e5e99903.png"> -->
+
+2021-08-06 (0.5h)
+
+- event section: image hover effect
+
+<img src="https://user-images.githubusercontent.com/72171903/128527730-d213df3d-d981-4d43-9f74-88781e135a0b.png">
+
 
