@@ -46,4 +46,9 @@ https://hongruizhen.com/main/index.php
 
 <img src="https://user-images.githubusercontent.com/72171903/128527730-d213df3d-d981-4d43-9f74-88781e135a0b.png">
 
+2021-08-12 (1h)
+
+- shop tab
+
+<img src="https://user-images.githubusercontent.com/72171903/129086693-38b53622-728c-4b99-8a20-d355947fbbbe.png">
 
