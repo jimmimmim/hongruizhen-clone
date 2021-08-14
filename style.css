@@ -516,11 +516,34 @@ footer p {
   position: relative;
 }
 
-.section {
+.section-head {
   height: 300px;
   overflow: hidden;
   position: relative;
 }
+
+.section {
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+
+.full-page {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  line-height: 0;
+  text-align: center;
+}
+
+.full-page img {
+  max-width: 100%;
+}
+
+/*++++++*/
+/* SHOP */
+/*++++++*/
 
 .sec-00 {
   background: white;
@@ -553,7 +576,8 @@ footer p {
 .sec-002 {
   background: #fff5d9;
   padding: 100px;
-  /* position: relative; */
+  position: relative;
+  overflow: hidden;
 }
 
 .sec-002 h3 {
@@ -585,6 +609,98 @@ footer p {
   transition: all 0.5s 0.2s;
   z-index: -1;
 }
+
+.shop-box {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.shop-box div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 7%;
+  z-index: 1;
+}
+
+.shop-box div::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  margin-top: -300px;
+  margin-left: -300px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+
+.shop-box div:hover::before {
+  animation: hoverbefore 3s ease infinite;
+}
+
+@keyframes hoverbefore {
+  0% {
+    width: 600px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -300px;
+  }
+  50% {
+    width: 450px;
+    height: 450px;
+    margin-top: -220px;
+    margin-left: -220px;
+  }
+  100% {
+    width: 600px;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -300px;
+  }
+}
+
+.shop-kakao::before {
+  background: rgba(254, 244, 185, 0.4);
+}
+
+.shop-naver::before {
+  background: rgba(204, 235, 230, 0.4);
+}
+
+.mockup {
+  display: block;
+  width: 380px;
+  height: 740px;
+  transition: all 0.5s;
+}
+
+.shop-kakao .mockup {
+  background: url(img/shop/shop_kakao.png) no-repeat center center;
+  background-size: 100%;
+}
+
+.shop-kakao .mockup:hover {
+  background: url(/img/shop/shop_kakao_hover.png) no-repeat center center;
+  background-size: 100%;
+}
+
+.shop-naver .mockup {
+  background: url(img/shop/shop_naver.png) no-repeat center center;
+  background-size: 100%;
+}
+
+.shop-naver .mockup:hover {
+  background: url(/img/shop/shop_naver_hover.png) no-repeat center center;
+  background-size: 100%;
+}
+
+/*++++++++++++*/
+/* PHILOSOPHY */
+/*++++++++++++*/
 
 /*++++++++++++++++++*/
 /* SENTION 1: MAIN */
@@ -759,62 +875,56 @@ footer p {
 
 #sli-pgimg-01 {
   left: 36px;
-  background-image: url(img/icon/sli_icon02.png);
+  background: url(img/icon/sli_icon02.png) no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: 25px;
-  background-repeat: no-repeat;
 }
 
 /* 수정 - active only */
 .sli-page-content:nth-child(1):active #sli-pgimg-01,
 .sli-page-content:nth-child(1):hover #sli-pgimg-01 {
   left: 36px;
-  background-image: url(img/icon/sli_icon02_active.png);
+  background: url(img/icon/sli_icon02_active.png) no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: 25px;
-  background-repeat: no-repeat;
   background-color: #ffe001;
   border: 2px solid #401e1e;
 }
 
 #sli-pgimg-02 {
-  background-image: url(img/icon/sandwich_default.png);
+  background: url(img/icon/sandwich_default.png) no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: 50px;
-  background-repeat: no-repeat;
 }
 
 /* 수정 - active only */
 .sli-page-content:nth-child(2):active #sli-pgimg-02,
 .sli-page-content:nth-child(2):hover #sli-pgimg-02 {
-  background-image: url(img/icon/sandwich_active.png);
+  background: url(img/icon/sandwich_active.png) no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: 50px;
-  background-repeat: no-repeat;
   background-color: #ffe001;
   border: 2px solid #401e1e;
 }
 
 #sli-pgimg-03 {
-  background-image: url(img/icon/croissant_default.png);
+  background: url(img/icon/croissant_default.png) no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: 50px;
-  background-repeat: no-repeat;
 }
 
 /* 수정 - active only */
 .sli-page-content:nth-child(3):active #sli-pgimg-03,
 .sli-page-content:nth-child(3):hover #sli-pgimg-03 {
-  background-image: url(img/icon/croissant_active.png);
+  background: url(img/icon/croissant_active.png) no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: 50px;
-  background-repeat: no-repeat;
   background-color: #ffe001;
   border: 2px solid #401e1e;
 }
