@@ -50,5 +50,14 @@ https://hongruizhen.com/main/index.php
 
 - shop tab
 
-<img src="https://user-images.githubusercontent.com/72171903/129086693-38b53622-728c-4b99-8a20-d355947fbbbe.png">
+<!-- <img src="https://user-images.githubusercontent.com/72171903/129086693-38b53622-728c-4b99-8a20-d355947fbbbe.png"> -->
+
+2021-08-12 (1.5h)
+
+- shop, brand philosophy tab
+
+<img src="https://user-images.githubusercontent.com/72171903/129450331-2ee69c55-3c17-4618-aac6-1963a60c9e43.png">
+<img src="https://user-images.githubusercontent.com/72171903/129450334-361f3392-095c-4365-9932-4ab0fd51fedd.png">
+
+
 
