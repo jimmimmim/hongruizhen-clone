@@ -84,12 +84,17 @@ h2 {
 }
 
 ul {
+  list-style: none;
   padding-left: 0;
 }
 
 li {
   list-style: none;
   padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -222,7 +227,6 @@ p {
   padding: 3px;
   float: none;
   color: #777;
-  text-decoration: none;
   text-align: left;
   overflow-wrap: normal;
   font-family: "S-CoreDream-3Light", sans-serif;
@@ -347,11 +351,12 @@ p {
 
 .wrapper {
   display: flex;
+  position: relative;
   flex-direction: column;
+  overflow: hidden;
 }
 
 footer a {
-  text-decoration: none;
   color: white;
 }
 
@@ -365,12 +370,13 @@ footer p {
 .footer {
   display: block;
   width: 100%;
-  height: 280px;
-  /* position: fixed; */
-  /* bottom: 0; */
+  height: 501px;
+  position: relative;
+  bottom: 0;
 }
 
 .container {
+  /* position: relative; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -511,9 +517,9 @@ footer p {
 
 /* 임시 - 슬라이드 효과 */
 .slide {
-  height: 580px;
-  overflow: hidden;
   position: relative;
+  height: 580px;
+  overflow: visible;
 }
 
 .section-head {
@@ -958,6 +964,10 @@ footer p {
   padding: 100px;
 }
 
+.sec-02 h2 {
+  margin-top: -100px;
+}
+
 .product-selector li {
   cursor: pointer;
   position: relative;
@@ -1033,8 +1043,8 @@ footer p {
   color: #1c1c1c;
 }
 
-.item-titlebox a {
-  text-decoration: none;
+.item-titlebox {
+  margin-top: 15px;
 }
 
 .item-name {
@@ -1048,7 +1058,7 @@ footer p {
   z-index: 1;
 }
 
-.item_name::after {
+.item-name::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1073,6 +1083,87 @@ footer p {
   word-break: keep-all;
 }
 
+.product-btn {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+}
+
+.product-btn li {
+  display: inline;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  max-width: 287px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 36px;
+  font-family: "Nunito Sans", "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 36px;
+  opacity: 0.15;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.btn-01 {
+  border: solid 3px #f52334;
+  color: #f52334;
+  background: transparent;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.btn-01:hover {
+  color: #fff;
+}
+
+.btn-01:before {
+  background: #f52334;
+}
+
+.btn-01:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+.btn-02 {
+  border: solid 3px #f52334;
+  color: #fff;
+  background: transparent;
+}
+
+.btn-02:hover {
+  color: #f52334;
+}
+
+.btn-02:before {
+  width: 100%;
+  background: #f52334;
+  opacity: 1;
+}
+
+.btn-02:hover:before {
+  width: 0;
+  opacity: 1;
+}
+
 /*++++++++++++++++++*/
 /* SECTION 3: EVENT */
 /*++++++++++++++++++*/
@@ -1091,10 +1182,6 @@ footer p {
   width: 330px;
   height: 330px;
   padding: 0;
-}
-
-.sli-event-slide a {
-  text-decoration: none;
 }
 
 .event-img {
@@ -1132,16 +1219,15 @@ footer p {
   line-height: 1.4;
   background-color: #3c2121;
   transform: translateY(100%);
-  -webkit-transition: transform 0.5s ease-out;
-  -o-transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   opacity: 0;
 }
 
 .event-img:hover .event-content {
   transform: translateY(0);
   opacity: 1;
-  transition: 0.45s;
 }
 
 .event-arrow {
@@ -1190,6 +1276,7 @@ footer p {
 /*+++++++++++*/
 
 .sub-slide {
+  position: relative;
   background: #9ad6cb;
 }
 
