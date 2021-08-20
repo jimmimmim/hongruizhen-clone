@@ -65,11 +65,15 @@ https://hongruizhen.com/main/index.php
 
 <!-- <img src="https://user-images.githubusercontent.com/72171903/129777085-29f003a9-fcd9-4c8d-9504-5df9472cc0e9.png"> -->
 
-2021-08-19
+2021-08-19 (1.5h)
 
 - product tab
 
 <img src="https://user-images.githubusercontent.com/72171903/130039185-b7697de2-dd47-4a1b-be11-7949cd4292bf.png">
+
+2021-08-20 (1h)
+
+- product tab: new, sandwich, dessert
 
 
 
