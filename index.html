@@ -8,6 +8,7 @@
     <title>홍루이젠 클론 코딩 페이지</title>
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -129,14 +130,14 @@
                         <div class="sli-page">
                             <div class="sli-page-content active">
                                 <span class="sli-img">
-                                    <img class="sli-img" id="sli-img-01" src="img/centerImage/centerImage_57.png" width=500px height=auto/>
+                                    <img class="sli-img" id="sli-img-01" src="img/centerImage/centerImage_57.png" width=500px height=auto style="margin-top: 50px;"/>
                                 </span>
                                 <div class="sli-text" id="sli-text-01">
                                     <h3>
                                         샌드위치 베이커리<br>
                                         <strong>홍루이젠</strong>
                                     </h3>
-                                    <p id="main-p">
+                                    <p class="main-p">
                                         바르고 건강한 샌드위치를 향한 홍루이젠의 약속,<br>
                                         누구나 안심하고 먹을 수 있는 좋은 재료로<br>
                                         만듭니다.
@@ -152,9 +153,34 @@
                             </div>
                             <div class="sli-page-content">
                                 <span class="sli-img">
-                                    <img class="sli-img" id="sli-img-02" src="img/centerImage/centerImage_59.png" width=500px height=auto/>
+                                    <img class="sli-img" id="sli-img-02" src="img/centerImage/centerImage_61.png" width=500px height=auto/>
                                 </span>
                                 <div class="sli-text" id="sli-text-02">
+                                    <h3>
+                                        여름 이벤트<br>
+                                        <strong>
+                                            ICE 아메리카노 or<br>
+                                            애플사이다 무료
+                                        </strong>
+                                    </h3>
+                                    <p class="main-p">
+                                        13,000원 이상 구매 시<br>
+                                        이벤트 기간 8월 17일 ~ 8월 31일
+                                    </p>
+                                </div>
+                                <span class="sli-pgnum"  id="sli-pgnum-02">
+                                    02
+                                </span>
+                                <span class="sli-pgimg" id="sli-pgimg-02"></span>
+                                <span class="sli-pgtxt" id="sli-pgtxt-02">
+                                    프로모션
+                                </span>
+                            </div>
+                            <div class="sli-page-content">
+                                <span class="sli-img">
+                                    <img class="sli-img" id="sli-img-03" src="img/centerImage/centerImage_59.png" width=500px height=auto/>
+                                </span>
+                                <div class="sli-text" id="sli-text-03">
                                     <h3>
                                         달콤 풍미 가득<br>
                                         <strong>크림듬뿍 샌드위치</strong>
@@ -164,19 +190,19 @@
                                         샌드위치
                                     </p>
                                 </div>
-                                <span class="sli-pgnum"  id="sli-pgnum-02">
-                                    02
+                                <span class="sli-pgnum"  id="sli-pgnum-03">
+                                    03
                                 </span>
-                                <span class="sli-pgimg" id="sli-pgimg-02"></span>
-                                <span class="sli-pgtxt" id="sli-pgtxt-02">
+                                <span class="sli-pgimg" id="sli-pgimg-03"></span>
+                                <span class="sli-pgtxt" id="sli-pgtxt-03">
                                     크림듬뿍 샌드위치
                                 </span>
                             </div>
                             <div class="sli-page-content">
                                 <span class="sli-img">
-                                    <img class="sli-img" id="sli-img-03" src="img/centerImage/centerImage_47.png" width=500px height=auto/>
+                                    <img class="sli-img" id="sli-img-04" src="img/centerImage/centerImage_47.png" width=500px height=auto style="margin-top: 50px;"/>
                                 </span>
-                                <div class="sli-text" id="sli-text-03">
+                                <div class="sli-text" id="sli-text-04">
                                     <h3>
                                         갓 구워서 더 맛있는<br>
                                         <strong>갓군샌 시리즈</strong>
@@ -185,11 +211,11 @@
                                         갓 구워서 따뜻하게 즐기는 든든함
                                     </p>
                                 </div> 
-                                <span class="sli-pgnum"  id="sli-pgnum-03">
-                                    03
+                                <span class="sli-pgnum"  id="sli-pgnum-04">
+                                    04
                                 </span>
-                                <span class="sli-pgimg" id="sli-pgimg-03"></span>
-                                <span class="sli-pgtxt" id="sli-pgtxt-03">
+                                <span class="sli-pgimg" id="sli-pgimg-04"></span>
+                                <span class="sli-pgtxt" id="sli-pgtxt-04">
                                     갓군샌 등장
                                 </span>
                             </div>
@@ -705,7 +731,7 @@
                                 </div>
                             </div>
                             <!-- DESSERT -->
-                            <div class="product-box">
+                            <div class="product-box" style="display: none;">
                                 <div class="goods-list">
                                     <div class="item-gallery-type">
                                         <div class="arrow-box arrow-left"></div>
