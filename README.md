@@ -7,6 +7,8 @@ https://hongruizhen.com/main/index.php
 
 ## Clone
 
+https://jimmimmim.github.io/hongruizhen-clone/
+
 2021-08-01 (6h)
 
 - top navigation bar
